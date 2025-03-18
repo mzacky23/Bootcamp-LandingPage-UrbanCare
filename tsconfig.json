@@ -22,6 +22,12 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/types/**/*.d.ts"  // Menambahkan folder tempat file deklarasi tipe
+  ],
   "exclude": ["node_modules"]
 }

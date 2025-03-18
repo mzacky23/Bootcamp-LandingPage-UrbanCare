@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@import 'swiper/css';
+@import 'swiper/css/pagination';
+@import 'swiper/css/navigation';
 
 :root {
   --background: #ffffff;
@@ -19,8 +22,21 @@
   }
 }
 
+/* Sembunyikan scrollbar di Chrome, Safari, dan Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Sembunyikan scrollbar di Firefox */
+html {
+  scrollbar-width: none;
+}
+
+/* Pastikan body tetap bisa discroll */
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  -ms-overflow-style: none; /* Untuk Internet Explorer dan Edge */
+  overflow-y: scroll; /* Memastikan scroll tetap aktif */
 }
