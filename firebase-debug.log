@@ -1,0 +1,30 @@
+[debug] [2025-03-18T11:58:59.168Z] ----------------------------------------------------------------------
+[debug] [2025-03-18T11:58:59.173Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-03-18T11:58:59.174Z] CLI Version:   13.34.0
+[debug] [2025-03-18T11:58:59.174Z] Platform:      win32
+[debug] [2025-03-18T11:58:59.175Z] Node Version:  v22.14.0
+[debug] [2025-03-18T11:58:59.175Z] Time:          Tue Mar 18 2025 18:58:59 GMT+0700 (Western Indonesia Time)
+[debug] [2025-03-18T11:58:59.175Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-03-18T11:58:59.583Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-03-18T11:58:59.584Z] > authorizing via signed-in user (muhammadzackya86@gmail.com)
+[debug] [2025-03-18T11:58:59.585Z] [iam] checking project urban-care-app for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-03-18T11:58:59.587Z] Checked if tokens are valid: false, expires at: 1742299710543
+[debug] [2025-03-18T11:58:59.587Z] Checked if tokens are valid: false, expires at: 1742299710543
+[debug] [2025-03-18T11:58:59.587Z] > refreshing access token with scopes: []
+[debug] [2025-03-18T11:58:59.591Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-03-18T11:58:59.591Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-03-18T11:59:00.664Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-03-18T11:59:00.665Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-03-18T11:59:00.701Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/urban-care-app:testIamPermissions [none]
+[debug] [2025-03-18T11:59:00.702Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/urban-care-app:testIamPermissions x-goog-quota-user=projects/urban-care-app
+[debug] [2025-03-18T11:59:00.702Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/urban-care-app:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-03-18T11:59:01.194Z] *** [apiv2] error from fetch(https://cloudresourcemanager.googleapis.com/v1/projects/urban-care-app:testIamPermissions, {"headers":{},"method":"POST","body":"{\"permissions\":[\"firebase.projects.get\",\"firebasehosting.sites.update\"]}"}): FetchError: request to https://cloudresourcemanager.googleapis.com/v1/projects/urban-care-app:testIamPermissions failed, reason: read ECONNRESET
+[debug] [2025-03-18T11:59:01.194Z] [iam] error while checking permissions, command may fail: Failed to make request to https://cloudresourcemanager.googleapis.com/v1/projects/urban-care-app:testIamPermissions
+[debug] [2025-03-18T11:59:01.196Z] Checked if tokens are valid: true, expires at: 1742302739665
+[debug] [2025-03-18T11:59:01.196Z] Checked if tokens are valid: true, expires at: 1742302739665
+[debug] [2025-03-18T11:59:01.197Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/urban-care-app [none]
+[debug] [2025-03-18T11:59:01.420Z] *** [apiv2] error from fetch(https://firebase.googleapis.com/v1beta1/projects/urban-care-app, {"headers":{},"method":"GET","signal":{}}): FetchError: request to https://firebase.googleapis.com/v1beta1/projects/urban-care-app failed, reason: read ECONNRESET
+[debug] [2025-03-18T11:59:01.422Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/urban-care-app (original: request to https://firebase.googleapis.com/v1beta1/projects/urban-care-app failed, reason: read ECONNRESET)
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
