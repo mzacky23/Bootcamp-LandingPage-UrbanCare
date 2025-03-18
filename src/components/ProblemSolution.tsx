@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { FiChevronDown, FiChevronUp } from 'react-icons/fi'; 
+import Image from 'next/image';
 
 const ProblemSolution = () => {
   const [expandedItem, setExpandedItem] = useState<string | null>(null);
@@ -52,11 +53,13 @@ const ProblemSolution = () => {
       <div className="w-full">
         <div className="bg-[#EBF4F6] overflow-hidden flex flex-col md:flex-row">
           <div className="w-full md:w-1/2 flex items-center justify-center p-10">
-            <img
-              src="/question-mark.png" 
-              alt="Problem Solution"
-              className="w-48 h-74 object-cover" 
-            />
+          <Image
+            src="/question-mark.png"
+            alt="Problem Solution"
+            width={192} // Sesuaikan dengan ukuran gambar
+            height={296} // Sesuaikan dengan ukuran gambar
+            className="w-48 h-74 object-cover"
+          />
           </div>
 
           <div className="w-full md:w-1/2 p-8 text-black">

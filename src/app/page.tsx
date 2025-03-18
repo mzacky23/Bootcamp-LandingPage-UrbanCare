@@ -27,7 +27,7 @@ const Home = () => {
           <h1 className="text-4xl font-bold mb-2 text-black">UrbanCare</h1>
           <p className="text-lg mb-4 text-black font-semibold">Semua dalam Satu</p>
           <p className="text-lg mb-6 text-black font-normal">
-            Report your city's infrastructure deficiencies and needs so we can make repairs quickly and quickly
+            Report your city&apos;s infrastructure deficiencies and needs so we can make repairs quickly and quickly
           </p>
           <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4 relative">
             <input
